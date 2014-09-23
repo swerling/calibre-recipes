@@ -1,0 +1,4 @@
+*.epub
+*/tmp/*
+calibre.git
+calibre_custom_recipes_dir

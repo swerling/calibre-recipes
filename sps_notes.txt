@@ -1,0 +1,12 @@
+Ways to run from command line:
+
+
+ # use spsnytimes.recipe to create .epub dir in test mode, fetching 2 articles
+ # from 3 feeds. Put a bunch of processing output in dir called
+ # '/tmp/ebook-convert-dbg'.  (then look for /tmp/ebook-convert-dbg/index.html)
+
+  rm -rf /tmp/*ebook-convert* && ebook-convert almon.recipe /tmp/ebook-convert-dbg --test 3 2 -vv | tee /tmp/stdout-ebook-convert.txt
+
+or for the detailed debug pipeline:
+
+  rm -rf /tmp/*ebook-convert* && ebook-convert almon.recipe  .epub --debug-pipeline /tmp/ebook-convert-dbg --test 10 7 -vv | tee /tmp/stdout-ebook-convert.txt

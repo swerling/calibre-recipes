@@ -1,3 +1,10 @@
+#!/usr/bin/env  python
+# -*- coding: utf-8 -*-
+__license__   = 'GPL v3'
+__copyright__ = '2014, spswerling'
+'''
+http://www.al-monitor.com/
+'''
 import os, string, inspect, datetime
 from dateutil.tz import tzlocal, tzutc
 from calibre.web.feeds.news import BasicNewsRecipe

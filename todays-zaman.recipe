@@ -92,7 +92,6 @@ class TodaysZaman(BasicNewsRecipe):
           if div_class:
               if div_class in [ 'pageColumnistsMainContent', 
                                 'pageCategoryContainer' ]:
-                  #print '  DIVCLASS' + div_class
                   for link in div.findAll('a', href=True):
                       self.process_link(sect_title, div_class, link)
               
@@ -129,7 +128,6 @@ class TodaysZaman(BasicNewsRecipe):
         
         if title_node:
             title = self.tag_to_string(title_node)
-            #print '        BING: ' + href + ', ' + title
             self.queue_article_link(section_title, full_href, title)
 
     def queue_article_link(self, section, url, title):
